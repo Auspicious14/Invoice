@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Invoice</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ubuntu;
+}
+
+:root {
+    --primary-color: white;
+    --primary-background-color: black;
+    --secondary-background-color: rgb(238, 238, 238);
+    --body-background-color: rgb(234, 239, 250);
+}
+body {
+    background: var(--body-background-color)
+}
+
+.body {
+    width: 70%;
+    height: 50rem;
+    padding: 2rem;
+    background: var(--primary-color);
+    margin: 2rem auto;
+}
+
+header {
+    background: var(--primary-background-color);
+    padding: .5rem;
+    border-radius: .2rem;
+    text-align: center;
+    color: var(--primary-color);
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+}
+
+address {
+    font-style: normal;
+    margin-top: 1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+
+th, td {
+    width: 10rem;
+    background: var(--secondary-background-color);
+    padding: .5rem;
+    border: .1rem solid #ddd;
+    border-radius: .3rem;
+    border: .1rem solid #ddd;
+    font-weight: normal;
+}
+
+td {
+    background: none;
+}
+
+.left {
+    text-align: right;
+}
+
+.first-table, .third-table{
+    width: 20rem;
+    text-align: left;
+    font-weight: normal;
+}
+
+.second-table {
+    margin-top: 2rem;
+    margin-bottom: .3rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+table {
+    font-size: 75%;
+    width: 100%;
+} 
+
+.button {
+    background: rgb(32, 136, 227);
+    padding: .1rem .3rem;
+    border-radius: .3rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.third-table {
+    margin-top: 1.5rem;
+    float: right;
+}
+
+.notes h3 {
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin-top: 9rem;
+    margin-bottom: .5rem;
+}
+
+    </style>
+</head>
+<body>
+    <div class="body">
+        <header>Invoice</header>
+        <address >
+            <p>Jonathan Neal</p>
+            <p>101 E. Chapman Ave</p>
+            <p>Orange, CA 92866</p>
+            <p>(800) 555-1234</p>
+        </address>
+        <div class="flex">
+            <h3>Some Company <br>c/O Some Guy</h1>
+            <table class="first-table">
+                <tr>
+                    <th>Invoice #</th>
+                    <td>101138</td>
+                </tr>
+                    <th>Date</th>
+                    <td>January 1, 2012</td>
+                </tr>
+                    <th>Amount Due</th>
+                    <td>$ 600.00</td>
+                </tr>
+            </table>
+        </div>
+        <table class="second-table">
+            <thead>
+                <tr >
+                <th class="bold" >Item</th>
+                <th class="bold">Description</th>
+                <th class="bold">Rate</th>
+                <th class="bold">Quality</th>
+                <th class="bold">Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Front End Consultation</td>
+                <td>Experience Review</td>
+                <td class="left">$150.00</td>
+                <td class="left">4</td>
+                <td class="left">$600.00</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="#" class="button">+</a>
+    <table class="third-table">
+        <tr>
+            <th>Total</th>
+            <td class="left">$600.00</td>
+        </tr>
+            <th>Amount paid</th>
+            <td class="left">$0.00</td>
+        </tr>
+            <th>Balance Due</th>
+            <td class="left">$ 600.00</td>
+        </tr>
+    </table>
+    <div class="notes">
+        <h3>Additional notes</h3>
+        <p>A finance charge of 1.5% will be made on unpaid balances after 30 days.</p>
+    </div>
+    </div>
+
+</body>
+</html>
